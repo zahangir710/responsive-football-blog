@@ -1,0 +1,236 @@
+/* fonts and links */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+head, body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header part css */
+.wrapper{
+    background-color: #2D25A0;
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 85px;
+}
+.header-text h1{
+    font-size: 64px;
+    color: #fff;
+    width: 485px;
+    margin-right: 100px;
+}
+.header-button{
+    width: 118px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    margin-top: 25px;
+    -webkit-transition: ease-in-out 0.5s;
+}
+.header-button a, .fa-arrow-right{
+    color: #fff;
+    font-size: 16px;
+    -webkit-transition: ease-in-out 0.5s;
+}
+.fa-arrow-right{
+    margin-left: 8px;
+}
+.header-button:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+.header-img{
+    width: 556px;
+    height: 438px;
+}
+.header-img img{
+    width: 100%;
+    height: 100%;
+}
+/* main blog part css */
+.center{
+    display: flex;
+    justify-content: center;
+}
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    grid-row-gap: 25px;
+}
+.blog-details{
+    width: 330px;
+    box-shadow: 5px 5px 30px lightgray;
+}
+.blog-img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+    overflow: hidden;
+}
+.blog-img:hover img{
+    transform: scale(1.05);
+    transition: transform ease 0.3s;
+    cursor: pointer;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.blog-text{
+    margin: 15px 15px;
+    margin-top: 0px;
+}
+.blog-text h3{
+    font-size: 28px;
+    color: #18191F;
+    margin-bottom: 15px;
+}
+.blog-text p{
+    color: #6C6C6C;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+/* highlights part css */
+.highlight-text{
+    width: 470px;
+    margin-right: 60px;
+    padding-right: 20px;
+}
+.highlight-text h2{   
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+    margin-bottom: 8px;
+}
+
+.highlight-text p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.highlights-img{
+    width: 567px;
+    height: 427px;
+    padding-right: 60px;
+}
+.highlights-img img{
+    width: 100%;
+    height: 100%;
+}
+/* highlights video css */
+#no-bg{
+    background-color: #fff;
+}
+.thumbnail-div{
+    width: 450px;
+    height: 290px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.thumbnail-div img{
+    width: 100%;
+}
+.all-thumbnail{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.overlay-hold{
+    position: relative;
+}
+.overlay-hold:hover .overlay{
+    transform: scale(1.0);
+    /* width: 100%; */
+    /* height: 290px; */
+    transition: all linear 0.5s;
+    /* opacity: 1; */
+}
+.overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;;
+    /* width: 0px; */
+    /* height: 0px; */
+    width: 100%;
+    height: 290px;
+    transform: scale(0);
+    /* opacity: 0; */
+    overflow: hidden;
+}
+.overlay p{
+    padding: 30px;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 70px;
+}
+.overlay .youtube-icon{
+    font-size: 50px;
+    color: rgb(231, 37, 37);
+}
+.icon{
+    padding-bottom: 50px;
+}
+/* news part css  */
+.all-news > h2{
+    margin-bottom: 50px;
+    font-size: 48px;
+    color: #0a0826ef;
+}
+.all-news> .header-button{
+    margin-left: 6px;
+}
+.news{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 1170px;
+    margin-bottom: 40px;
+}
+.news-img{
+    width: 600px;
+    height: 427px;
+}
+.news-img img{
+    width: 100%;
+    height: 100%;
+}
+.news-text{
+    margin-left: 50px;
+    width: 500px;
+}
+.news-text p{
+    font-size: 16px;
+    color: grey;
+}
+.news-text h2{
+    margin-top: 20px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.news-text h4{
+    font-size: 24px;
+    color: #0a0826e5;
+    margin-bottom: 20px;
+}
+.news-text >p > span{
+    color: orange;
+}
