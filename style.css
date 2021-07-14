@@ -445,6 +445,10 @@ media query part for mobile devices
         font-size: 14px;
         width: 260px;
     }
+    .all-news> .header-button {
+        margin-left: 360px;
+        margin-bottom: 30px;
+    }
     /*---------------------------------------
      footer part css 
      -----------------------------------*/
