@@ -420,6 +420,7 @@ media query part for mobile devices
         margin-bottom: 30px;
         font-size: 36px;
         color: #0a0826ef;
+        margin-left: 350px;
     }
     .news {
         display: flex;
