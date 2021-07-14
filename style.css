@@ -1,7 +1,11 @@
-/* fonts and links */
+/*--------------
+ fonts and links 
+ ----------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* common css */
+/* -------------
+common css 
+-------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +16,9 @@ a{
 head, body{
     font-family: 'Poppins', sans-serif;
 }
-/* header part css */
+/* -----------------
+header part css
+-------------------- */
 .wrapper{
     background-color: #2D25A0;
     width: 1440px;
@@ -59,7 +65,9 @@ head, body{
     width: 100%;
     height: 100%;
 }
-/* main blog part css */
+/*------------------
+ main blog part css
+ -------------------- */
 .center{
     display: flex;
     justify-content: center;
@@ -105,7 +113,9 @@ head, body{
     font-size: 16px;
     padding-bottom: 30px;
 }
-/* highlights part css */
+/* ----------------
+highlights part css 
+-----------------------*/
 .highlight-text{
     width: 470px;
     margin-right: 60px;
@@ -131,7 +141,9 @@ head, body{
     width: 100%;
     height: 100%;
 }
-/* highlights video css */
+/* ------------------
+highlights video css
+------------------------- */
 #no-bg{
     background-color: #fff;
 }
@@ -189,7 +201,9 @@ head, body{
 .icon{
     padding-bottom: 50px;
 }
-/* news part css  */
+/* -------------------
+news part css 
+----------------------- */
 .all-news{
     margin-bottom: 150px;
 }
@@ -237,7 +251,9 @@ head, body{
 .news-text >p > span{
     color: orange;
 }
-/* footer part css */
+/* ---------------------
+footer part css
+------------------------- */
 .container-2{
     display: flex;
     flex-direction: column;
@@ -256,7 +272,7 @@ head, body{
 }
 .footer-icon a{
     margin-left: 20px;
-    color: #5b5f6d;;
+    color: rgb(231, 37, 37);;
     padding: 20px;
     background-color: #969bab48;
     font-size: 24px;
@@ -266,8 +282,295 @@ head, body{
     font-size: 18px;
 }
 .footer-icon a:hover{
-    background-color: rgba(31, 97, 151, 0.76);
+    background-color: rgb(231, 37, 37);
     color: #fff;
     transition: all linear 0.3s;
 }
 /* footer part css end */
+
+/* --------------------------------
+media query part for mobile devices 
+------------------------------------*/
+@media screen and (max-width: 540px) {
+    /*---------------------- 
+    header part style
+    ------------------------ */
+    .wrapper{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .header-text h1 {
+        font-size: 36px;
+        width: 295px;
+        margin-right: 110px;
+    }
+    .header-img {
+        width: 330px;
+        height: 260px;
+        padding-top: 50px;
+        padding-right: 90px;
+    }
+
+    /* ----------------------
+    blog part
+    ----------------------- */
+    .blogs {
+        margin-left: 15%;
+        margin-right: 30%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* width: 1170px; */
+    }
+    .center {
+        margin-left: 6%;
+    }
+    .container {
+        padding-bottom: 50px;
+    }
+
+    /*------------------------
+     highlights part 
+     -----------------------*/
+    #mr-0{
+        margin-left: 0;
+        padding-right: 75px;
+    }
+    .highlight-text{
+        width: 330px;
+    }
+    .highlight-text h2 {
+        font-size: 36px;
+        width: 365px;
+        padding: 25px;
+    }
+    .highlight-text p {
+        font-size: 16px;
+        color: #6C6C6C;
+        width: 370px;
+        padding: 24px;
+    }
+    .highlights-img {
+        margin-top: 30px;
+        width: 330px;
+        height: 250px;
+        padding-right: 80px;
+    }
+    .highlights-img img {
+        width: 100%;
+        height: 100%;
+        margin-left: 6%;
+    }
+    .header-button {
+        width: 118px;
+        background-color: #E02C6D;
+        padding: 5px 5px;
+        margin-top: 25px;
+        margin-left: 23px;
+        -webkit-transition: ease-in-out 0.5s;
+    }
+    /*----------------------------
+     highlights videos
+     ----------------------------- */
+    .all-thumbnail {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .thumbnail-div {
+        margin-left: 6%;
+        width: 400px;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+    .overlay-hold{
+        width: 400px;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .overlay {
+        top: 0;
+        left: 25px;
+        /* width: 0px; */
+        /* height: 0px; */
+        width: 100%;
+        height: 250px;
+        transform: scale(0);
+        /* opacity: 0; */
+        overflow: hidden;
+    }
+    .overlay p {
+        padding: 30px;
+        font-size: 10px;
+        color: #fff;
+        padding-top: 70px;
+    }
+    /*-----------------------------------
+     news part -
+     -----------------------------------*/
+    .all-news {
+        margin-bottom: 50px;
+    }
+    .all-news > h2 {
+        margin-bottom: 30px;
+        font-size: 36px;
+        color: #0a0826ef;
+    }
+    .news {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-img {
+        width: 540px;
+        height:240px;
+    }
+    .news-img img{
+        width: 50%;
+        margin-left: 7%;
+    }
+    .news-text h2 {
+        font-size: 18px;
+        width: 260px;
+    }
+    .news-text h4 {
+        font-size: 14px;
+        width: 260px;
+    }
+    /*---------------------------------------
+     footer part css 
+     -----------------------------------*/
+    .footer-img {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .container-2 {
+        margin-bottom: 50px;
+    }
+    .footer-icon a {
+        margin-left: 14px;
+        padding: 8px;
+        font-size: 15px;
+    }
+    .copy-right p {
+        font-size: 10px;
+    }
+
+}
+/* -----------------------------
+ tab view media query
+---------------------------------- */
+@media screen and (min-width: 541px) and (max-width: 768px){
+    .wrapper {
+        width: 100%;
+        background-color: #2D25A0;
+        /* width: 1440px; */
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-bottom: 85px;
+        
+    }
+    .header-img {
+        width: 556px;
+        height: 438px;
+        margin-top: 50px;
+    }
+    /*---------------------------- 
+    blog part media 
+    ----------------------------*/
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        width: 1170px;
+        grid-row-gap: 25px;
+    }
+    /*------------------------------------
+     highlights part media 
+     -----------------------------------*/
+    .highlight-text {
+        width: 470px;
+        margin-right: 136px;
+        padding-right: 20px;
+    }
+    .header-button {
+        margin-bottom: 30px;
+        width: 118px;
+        background-color: #E02C6D;
+        padding: 10px 24px;
+        margin-top: 25px;
+        -webkit-transition: ease-in-out 0.5s;
+    }
+    /* --------------------------------
+    news part media 
+    ----------------------------------- */
+    .all-news > h2 {
+        margin-bottom: 50px;
+        font-size: 36px;
+        color: #0a0826ef;
+        margin-left: 200px;
+    }
+    .news {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        /* width: 1170px; */
+        margin-bottom: 40px;
+    }
+    .news-img {
+        width: 450px;
+        height: 427px;
+        padding-left: 20%;
+    }
+    .news-text h2 {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    .news-text h4 {
+        font-size: 12px;
+        color: #0a0826e5;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    .all-news {
+        margin-bottom: 100px;
+    }
+    .all-news> .header-button {
+        margin-left: 200px;
+    }
+    /* --------------------------
+    footer part media
+    -----------------------------  */
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .footer-img {
+        width: 400px;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    .copy-right p {
+        font-size: 12px;
+    }
+
+}
